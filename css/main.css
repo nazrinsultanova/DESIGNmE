@@ -9,8 +9,10 @@ body {
 }
 
 .div-1270 {
-    max-width: 142rem;
+    max-width: 425rem;
     margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 /*------------Calibri font------------*/
@@ -248,7 +250,8 @@ body {
 
 .home-container .home-content {
     position: absolute;
-    top: 50%;
+    bottom: 0;
+    margin-bottom: 28px;
 }
 
 .home-container .home-content h1 {

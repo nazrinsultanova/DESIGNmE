@@ -279,7 +279,7 @@ footer {
     margin-bottom: 2rem;
 }
  
-footer a {
+footer .creation {
     color: #141414;
     text-decoration: none;
     position: relative;
@@ -288,7 +288,7 @@ footer a {
     font-weight: 400;
 }
 
-footer a:after {
+footer .creation:after {
     content: '';
     display: block;
     margin-top: 0.5rem;
@@ -303,7 +303,7 @@ footer a:after {
     top: 1.6rem;
 }
 
-footer a:hover:after {
+footer .creation:hover:after {
     transform: scaleX(1);
 }
 
@@ -371,3 +371,137 @@ footer a:hover:after {
     margin-bottom: 0;
     margin-top: 7rem;
  }
+
+
+ /*-----------------Social icons------------*/
+
+ footer .social-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ footer .social-ul .social-item {
+    margin-right: 2rem;
+}
+
+footer .social-ul .social-item:last-child {
+    margin-right: 0;
+}
+
+footer  .social-ul .social-item a .social {
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 65px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    border-radius: 30%;
+    -moz-box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    opacity: 0.99;
+}
+
+
+footer .social-ul .social-item a .social:before {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    top: 90%;
+    left: -110%;
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+footer .social-ul .social-item a .social i {
+    color: #3e1a77;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    font-size: 22px;
+    vertical-align: middle;
+    position: relative;
+    top: -18px;
+}
+
+footer .social-ul .social-item a .social.facebook i {
+    color: #3b5998;
+}
+
+footer .social-ul .social-item a .social.instagram i {
+    color: #df3e43;
+}
+
+footer .social-ul .social-item a .social.youtube i {
+    color: #c4302b;
+}
+
+footer .social-ul .social-item a .social.pinterest i {
+    color: #c4302b;
+}
+ 
+footer .social-ul .social-item a .social.instagram:before {
+	background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+footer .social-ul .social-item a .social.youtube:before {
+	background: #c4302b;
+}
+
+footer .social-ul .social-item a .social.pinterest:before {
+	background: #c4302b;
+}
+
+footer .social-ul .social-item a .social.facebook:before {
+	background: #3b5998;
+}
+
+footer .social-ul .social-item a .social:focus:hover {
+	top: -10%;
+	left: -10%;
+}
+
+footer .social-ul .social-item a .social:focus i {
+	color: #fff;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+footer .social-ul .social-item a .social:hover:before {
+	top: -10%;
+	left: -10%;
+}
+
+footer .social-ul .social-item a .social:hover i {
+	color: #fff;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}

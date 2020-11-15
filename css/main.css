@@ -8,11 +8,18 @@ body {
     box-sizing: border-box;
 }
 
-.div-1270 {
+.div-100 {
     max-width: 100%;
     padding-left: 6rem;
     padding-right: 6rem;
 }
+
+.div-1270 {
+    max-width: 127rem;
+    margin: 0 auto;
+}
+
+
 
 /*------------Calibri font------------*/
 
@@ -160,6 +167,7 @@ body {
     position: absolute;
     width: 100%;
     z-index: 999;
+    top: 0;
 }
 
 .header-content {
@@ -270,21 +278,17 @@ footer {
     justify-content: flex-end;
     margin-bottom: 2rem;
 }
-
-footer p {
+ 
+footer a {
+    color: #141414;
+    text-decoration: none;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-footer p a {
-    color: #141414;
-    text-decoration: none;
-    position: relative;
-    
-}
-
-footer p a:after {
+footer a:after {
     content: '';
     display: block;
     margin-top: 0.5rem;
@@ -293,14 +297,77 @@ footer p a:after {
     position: absolute;
     width: 100%;
     left: 0;
-    height: 0.1rem;
+    height: 1px;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     top: 1.6rem;
 }
 
-footer p a:hover:after {
+footer a:hover:after {
     transform: scaleX(1);
 }
 
+ /*--------------About-------------*/
+
+ .about-container {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 12rem;
+ }
  
+ .about-container h2 {
+     color: #212529;
+     font-size: 3.2rem;
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+     background: white;
+     display: inline-block;
+     margin: 0.5rem;
+     padding: 0 3rem;
+     font-weight: 600;
+ }
+
+ .content {
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: 3rem;
+ }
+
+ .content p {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1.6rem;
+     color: #141414;
+     font-weight: 400;
+     line-height: 2.3rem;
+ }
+ 
+ .title-wrapper {
+    position: relative;
+    margin: 3rem auto 2rem;
+    z-index: 2;
+    text-align: center;
+    width: 35%;
+ }
+
+ .title-wrapper:before {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #757575;
+    text-align: center;
+    content: " ";
+    z-index: -1;
+ }
+
+ .content h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #212529;
+    margin-bottom: 0;
+    margin-top: 7rem;
+ }
